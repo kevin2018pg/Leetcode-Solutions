@@ -52,3 +52,15 @@ class Solution:
         for num in nums:
             tmp.appendleft(num) if num % 2 == 1 else tmp.append(num)
         return list(tmp)
+
+
+    # 两个列表相加
+    def exchange_s4(self, nums: List[int]) -> List[int]:
+        num1 = []
+        num2 = []
+        for i in nums:
+            if i % 2 != 0:
+                num1.append(i)
+            else:
+                num2.append(i)
+        return num1 + num2
