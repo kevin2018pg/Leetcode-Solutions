@@ -59,7 +59,7 @@ class Solution:
         num1 = []
         num2 = []
         for i in nums:
-            if i % 2 != 0:
+            if i % 2 == 1:
                 num1.append(i)
             else:
                 num2.append(i)
